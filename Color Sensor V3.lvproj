@@ -19,6 +19,9 @@
 		<Item Name="TypeDef" Type="Folder" URL="../TypeDef">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="Menu" Type="Folder" URL="../Menu">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="WPI_I2CDevRef.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/I2C/WPI_I2CDevRef.ctl"/>
@@ -85,7 +88,159 @@
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="WPILib" Type="Source Distribution">
+				<Property Name="Bld_buildCacheID" Type="Str">{339AB74A-2868-4033-BD44-5E06E50EE490}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">WPILib</Property>
+				<Property Name="Bld_excludedDirectory[0]" Type="Path">vi.lib</Property>
+				<Property Name="Bld_excludedDirectory[0].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[1]" Type="Path">resource/objmgr</Property>
+				<Property Name="Bld_excludedDirectory[1].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[2]" Type="Path">/C/ProgramData/National Instruments/InstCache/19.0</Property>
+				<Property Name="Bld_excludedDirectory[3]" Type="Path">/C/Users/Will/Documents/LabVIEW Data/2019(32-bit)/ExtraVILib</Property>
+				<Property Name="Bld_excludedDirectory[4]" Type="Path">instr.lib</Property>
+				<Property Name="Bld_excludedDirectory[4].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectory[5]" Type="Path">user.lib</Property>
+				<Property Name="Bld_excludedDirectory[5].pathType" Type="Str">relativeToAppDir</Property>
+				<Property Name="Bld_excludedDirectoryCount" Type="Int">6</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/WPILib/ThirdParty</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{D2269047-3809-45AC-A0BD-CDF842F359B8}</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/WPILib/ThirdParty</Property>
+				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/WPILib/ThirdParty/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[2].destName" Type="Str">Typedef</Property>
+				<Property Name="Destination[2].path" Type="Path">../builds/WPILib/ThirdParty/REV Robotics/Color SensorV3/Typedef</Property>
+				<Property Name="Destination[2].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[3].destName" Type="Str">SubVI</Property>
+				<Property Name="Destination[3].path" Type="Path">../builds/WPILib/ThirdParty/REV Robotics/Color SensorV3/SubVI</Property>
+				<Property Name="Destination[3].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[3].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[4].destName" Type="Str">Menu</Property>
+				<Property Name="Destination[4].path" Type="Path">../builds/WPILib/ThirdParty/Sensors/REV Robotics</Property>
+				<Property Name="Destination[4].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="DestinationCount" Type="Int">5</Property>
+				<Property Name="Source[0].itemID" Type="Str">{351D47D6-C4E4-4266-84A1-AEBEE2832EAE}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">3</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/SubVI</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[1].type" Type="Str">Container</Property>
+				<Property Name="Source[2].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[2].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[2].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/TypeDef</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[2].type" Type="Str">Container</Property>
+				<Property Name="Source[3].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[3].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[3].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[3].itemID" Type="Ref">/My Computer/Menu</Property>
+				<Property Name="Source[3].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[3].type" Type="Str">Container</Property>
+				<Property Name="Source[4].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[4].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[4].destinationIndex" Type="Int">4</Property>
+				<Property Name="Source[4].itemID" Type="Ref">/My Computer/Menu/Sensors/REV Robotics</Property>
+				<Property Name="Source[4].type" Type="Str">Container</Property>
+				<Property Name="SourceCount" Type="Int">5</Property>
+			</Item>
+			<Item Name="Color Sensor V3 Package" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
+				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
+				<Property Name="NIPKG_certificates" Type="Bool">true</Property>
+				<Property Name="NIPKG_createInstaller" Type="Bool">false</Property>
+				<Property Name="NIPKG_feedLocation" Type="Path">../builds/NI_AB_PROJECTNAME/Color Sensor V3 Package/Feed</Property>
+				<Property Name="NIPKG_feedLocation.Type" Type="Str">relativeToCommon</Property>
+				<Property Name="NIPKG_installerArtifacts" Type="Str"></Property>
+				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
+				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/Color Sensor V3 Package/Package Installer</Property>
+				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">rev-color-sensor-v3_1.0.0-0_windows_all.nipkg</Property>
+				<Property Name="NIPKG_license" Type="Ref"></Property>
+				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
+				<Property Name="NIPKG_storeProduct" Type="Bool">false</Property>
+				<Property Name="NIPKG_VisibleForRuntimeDeployment" Type="Bool">false</Property>
+				<Property Name="PKG_actions.Count" Type="Int">0</Property>
+				<Property Name="PKG_autoIncrementBuild" Type="Bool">false</Property>
+				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
+				<Property Name="PKG_buildNumber" Type="Int">0</Property>
+				<Property Name="PKG_buildSpecName" Type="Str">Color Sensor V3 Package</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">1</Property>
+				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[0].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
+				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
+				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Programming Environments</Property>
+				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[0].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_description" Type="Str">Library for the REV Color Sensor V3 for FIRST Robotics Competition 2020</Property>
+				<Property Name="PKG_destinations.Count" Type="Int">6</Property>
+				<Property Name="PKG_destinations[0].ID" Type="Str">{3129885A-BFE0-4C8D-9471-08CA34B004A3}</Property>
+				<Property Name="PKG_destinations[0].Subdir.Directory" Type="Str">vi.lib</Property>
+				<Property Name="PKG_destinations[0].Subdir.Parent" Type="Str">{A270A346-80E7-41B8-B121-66C9515EB786}</Property>
+				<Property Name="PKG_destinations[0].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[1].ID" Type="Str">{A270A346-80E7-41B8-B121-66C9515EB786}</Property>
+				<Property Name="PKG_destinations[1].Subdir.Directory" Type="Str">LabVIEW 2019</Property>
+				<Property Name="PKG_destinations[1].Subdir.Parent" Type="Str">{E6057094-A6F4-4DD9-9942-D0BF5AC874BB}</Property>
+				<Property Name="PKG_destinations[1].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[2].ID" Type="Str">{BB51349E-3E8C-4DE9-B572-AC410F787796}</Property>
+				<Property Name="PKG_destinations[2].Subdir.Directory" Type="Str">Rock Robotics</Property>
+				<Property Name="PKG_destinations[2].Subdir.Parent" Type="Str">{3129885A-BFE0-4C8D-9471-08CA34B004A3}</Property>
+				<Property Name="PKG_destinations[2].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[3].ID" Type="Str">{D63876B5-527F-412B-B50F-3B9EBF4A56EC}</Property>
+				<Property Name="PKG_destinations[3].Subdir.Directory" Type="Str">ThirdParty</Property>
+				<Property Name="PKG_destinations[3].Subdir.Parent" Type="Str">{DE0D8B77-42A4-40A0-8AE6-6FA3F20125DB}</Property>
+				<Property Name="PKG_destinations[3].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[4].ID" Type="Str">{DE0D8B77-42A4-40A0-8AE6-6FA3F20125DB}</Property>
+				<Property Name="PKG_destinations[4].Subdir.Directory" Type="Str">WPI</Property>
+				<Property Name="PKG_destinations[4].Subdir.Parent" Type="Str">{BB51349E-3E8C-4DE9-B572-AC410F787796}</Property>
+				<Property Name="PKG_destinations[4].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[5].ID" Type="Str">{E6057094-A6F4-4DD9-9942-D0BF5AC874BB}</Property>
+				<Property Name="PKG_destinations[5].Subdir.Directory" Type="Str">National Instruments</Property>
+				<Property Name="PKG_destinations[5].Subdir.Parent" Type="Str">root_5</Property>
+				<Property Name="PKG_destinations[5].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[6].ID" Type="Str">{DE0D8B77-42A4-40A0-8AE6-6FA3F20125DB}</Property>
+				<Property Name="PKG_destinations[6].Subdir.Directory" Type="Str">WPI</Property>
+				<Property Name="PKG_destinations[6].Subdir.Parent" Type="Str">{BB51349E-3E8C-4DE9-B572-AC410F787796}</Property>
+				<Property Name="PKG_destinations[6].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[7].ID" Type="Str">{E6057094-A6F4-4DD9-9942-D0BF5AC874BB}</Property>
+				<Property Name="PKG_destinations[7].Subdir.Directory" Type="Str">National Instruments</Property>
+				<Property Name="PKG_destinations[7].Subdir.Parent" Type="Str">root_5</Property>
+				<Property Name="PKG_destinations[7].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_displayName" Type="Str">REV Color Sensor V3</Property>
+				<Property Name="PKG_displayVersion" Type="Str"></Property>
+				<Property Name="PKG_feedDescription" Type="Str"></Property>
+				<Property Name="PKG_feedName" Type="Str"></Property>
+				<Property Name="PKG_homepage" Type="Str">https://github.com/REVrobotics/Color-Sensor-v3-LabVIEW</Property>
+				<Property Name="PKG_hostname" Type="Str"></Property>
+				<Property Name="PKG_lvrteTracking" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
+				<Property Name="PKG_maintainer" Type="Str">REV Robotics &lt;support@revrobotics.com&gt;</Property>
+				<Property Name="PKG_output" Type="Path">../builds</Property>
+				<Property Name="PKG_output.Type" Type="Str">relativeToProject</Property>
+				<Property Name="PKG_packageName" Type="Str">rev-color-sensor-v3</Property>
+				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
+				<Property Name="PKG_section" Type="Str">Add-Ons</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">0</Property>
+				<Property Name="PKG_sources.Count" Type="Int">1</Property>
+				<Property Name="PKG_sources[0].Destination" Type="Str">{D63876B5-527F-412B-B50F-3B9EBF4A56EC}</Property>
+				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/WPILib</Property>
+				<Property Name="PKG_sources[0].Type" Type="Str">Build</Property>
+				<Property Name="PKG_synopsis" Type="Str">REV Color Sensor V3</Property>
+				<Property Name="PKG_version" Type="Str">1.0.0</Property>
+			</Item>
+		</Item>
 	</Item>
 	<Item Name="Target" Type="RT myRIO">
 		<Property Name="alias.name" Type="Str">Target</Property>
@@ -167,17 +322,6 @@ AddOutputFilter chunkFilter
 		<Property Name="target.WebServer.ViAccess" Type="Str">+*</Property>
 		<Property Name="target.webservices.SecurityAPIKey" Type="Str">PqVr/ifkAQh+lVrdPIykXlFvg12GhhQFR8H9cUhphgg=:pTe9HRlQuMfJxAG6QCGq7UvoUpJzAzWGKy5SbZ+roSU=</Property>
 		<Property Name="target.webservices.ValidTimestampWindow" Type="Int">15</Property>
-		<Item Name="Team Code" Type="Folder">
-			<Item Name="Autonomous Independent.vi" Type="VI" URL="../Autonomous Independent.vi"/>
-			<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
-			<Item Name="Disabled.vi" Type="VI" URL="../Disabled.vi"/>
-			<Item Name="Finish.vi" Type="VI" URL="../Finish.vi"/>
-			<Item Name="Periodic Tasks.vi" Type="VI" URL="../Periodic Tasks.vi"/>
-			<Item Name="Robot Global Data.vi" Type="VI" URL="../Robot Global Data.vi"/>
-			<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
-			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
-			<Item Name="Vision Processing.vi" Type="VI" URL="../Vision Processing.vi"/>
-		</Item>
 		<Item Name="Robot Main.vi" Type="VI" URL="../Robot Main.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -253,10 +397,13 @@ AddOutputFilter chunkFilter
 				<Item Name="WPI_SPIBusCacheOp.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/SPI/WPI_SPIBusCacheOp.ctl"/>
 				<Item Name="WPI_UtilitiesFRC Build Error.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Utilities/WPI_UtilitiesFRC Build Error.vi"/>
 			</Item>
+			<Item Name="Color Sensor V3 Add Color Match.vi" Type="VI" URL="../SubVI/Public/Color Sensor V3 Add Color Match.vi"/>
 			<Item Name="Color Sensor V3 Check Device ID.vi" Type="VI" URL="../SubVI/Private/Color Sensor V3 Check Device ID.vi"/>
-			<Item Name="Color Sensor V3 Configure Color Sensor.vi" Type="VI" URL="../SubVI/Public/Color Sensor V3 Configure Color Sensor.vi"/>
-			<Item Name="Color Sensor V3 Configure Proximity Sensor LED.vi" Type="VI" URL="../SubVI/Public/Color Sensor V3 Configure Proximity Sensor LED.vi"/>
-			<Item Name="Color Sensor V3 Configure Proximity Sensor.vi" Type="VI" URL="../SubVI/Public/Color Sensor V3 Configure Proximity Sensor.vi"/>
+			<Item Name="Color Sensor V3 Color Match FGV.vi" Type="VI" URL="../SubVI/Private/Color Sensor V3 Color Match FGV.vi"/>
+			<Item Name="Color Sensor V3 Color Match.ctl" Type="VI" URL="../TypeDef/Color Sensor V3 Color Match.ctl"/>
+			<Item Name="Color Sensor V3 Config Color Sensor.vi" Type="VI" URL="../SubVI/Public/Color Sensor V3 Config Color Sensor.vi"/>
+			<Item Name="Color Sensor V3 Config Prox Sensor.vi" Type="VI" URL="../SubVI/Public/Color Sensor V3 Config Prox Sensor.vi"/>
+			<Item Name="Color Sensor V3 Config ProxSensor LED.vi" Type="VI" URL="../SubVI/Public/Color Sensor V3 Config ProxSensor LED.vi"/>
 			<Item Name="Color Sensor V3 DevRef.ctl" Type="VI" URL="../TypeDef/Color Sensor V3 DevRef.ctl"/>
 			<Item Name="Color Sensor V3 GainFactor.ctl" Type="VI" URL="../TypeDef/Color Sensor V3 GainFactor.ctl"/>
 			<Item Name="Color Sensor V3 Get Color.vi" Type="VI" URL="../SubVI/Public/Color Sensor V3 Get Color.vi"/>
@@ -264,10 +411,11 @@ AddOutputFilter chunkFilter
 			<Item Name="Color Sensor V3 Initialize.vi" Type="VI" URL="../SubVI/Private/Color Sensor V3 Initialize.vi"/>
 			<Item Name="Color Sensor V3 LEDCurrent.ctl" Type="VI" URL="../TypeDef/Color Sensor V3 LEDCurrent.ctl"/>
 			<Item Name="Color Sensor V3 LEDPulseFreq.ctl" Type="VI" URL="../TypeDef/Color Sensor V3 LEDPulseFreq.ctl"/>
+			<Item Name="Color Sensor V3 Match Color.vi" Type="VI" URL="../SubVI/Public/Color Sensor V3 Match Color.vi"/>
 			<Item Name="Color Sensor V3 MeasurementRate.ctl" Type="VI" URL="../TypeDef/Color Sensor V3 MeasurementRate.ctl"/>
 			<Item Name="Color Sensor V3 Open.vi" Type="VI" URL="../SubVI/Public/Color Sensor V3 Open.vi"/>
-			<Item Name="Color Sensor V3 ProximitySensorMeasurementRate.ctl" Type="VI" URL="../TypeDef/Color Sensor V3 ProximitySensorMeasurementRate.ctl"/>
-			<Item Name="Color Sensor V3 ProximitySensorResolution.ctl" Type="VI" URL="../TypeDef/Color Sensor V3 ProximitySensorResolution.ctl"/>
+			<Item Name="Color Sensor V3 ProximityRate.ctl" Type="VI" URL="../TypeDef/Color Sensor V3 ProximityRate.ctl"/>
+			<Item Name="Color Sensor V3 ProxResolution.ctl" Type="VI" URL="../TypeDef/Color Sensor V3 ProxResolution.ctl"/>
 			<Item Name="Color Sensor V3 Read8.vi" Type="VI" URL="../SubVI/Private/Color Sensor V3 Read8.vi"/>
 			<Item Name="Color Sensor V3 Registers.ctl" Type="VI" URL="../TypeDef/Color Sensor V3 Registers.ctl"/>
 			<Item Name="Color Sensor V3 Resolution.ctl" Type="VI" URL="../TypeDef/Color Sensor V3 Resolution.ctl"/>
